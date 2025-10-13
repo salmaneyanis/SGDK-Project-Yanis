@@ -1,2 +1,43 @@
+<<<<<<< HEAD
 /out
 /src/boot
+=======
+
+> 💡 Ce README est prêt à être lu directement sur GitHub avec syntaxe claire et code bien formaté.
+
+---
+
+## 🧹 2️⃣ Exemple de **.gitignore** adapté à ton projet SGDK
+
+Tu peux remplacer ton `.gitignore` actuel par ceci :
+
+```gitignore
+# ===== SGDK / Mega Drive build files =====
+out/
+*.o
+*.d
+*.bin
+*.out
+*.elf
+*.map
+*.lst
+*.sym
+*.rs
+
+# ===== VS Code =====
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/c_cpp_properties.json
+
+# ===== System / Misc =====
+.DS_Store
+Thumbs.db
+*.log
+*.bak
+*.tmp
+*.swp
+
+# ===== Java temporary (rescomp) =====
+hs_err_pid*.log
+>>>>>>> 6451fc0a2821126c8ac8cea7df34aceba375d294
