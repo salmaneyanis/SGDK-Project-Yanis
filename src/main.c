@@ -6,6 +6,11 @@
 	//int hscroll_offset_fore = 0;
 
 	Sprite* player;
+
+	#define ANIM_STILL 0
+	#define ANIM_IDLE 1
+	#define ANIM_WALK 2
+	#define ANIM_UPPER 3
 	
 int main()
 {
@@ -20,7 +25,8 @@ int main()
 
 	SPR_init();
 	PAL_setPalette(PAL2,our_sprite.palette->data,DMA);
-	player = SPR_addSprite(&our_sprite,0,0,TILE_ATTR(PAL2,FALSE,FALSE,FALSE));
+	player = SPR_addSprite(&our_sprite,100,50,TILE_ATTR(PAL2,FALSE,FALSE,TRUE));
+	SPR_setAnim(player, ANIM_UPPER);
 
 	while(1)
 	{        
