@@ -11,6 +11,7 @@
 	#define ANIM_IDLE 1
 	#define ANIM_WALK 2
 	#define ANIM_UPPER 3
+	//Byfacundogomez
 	
 int main()
 {
